@@ -1,0 +1,11 @@
+[user]
+	email = griffin.z.s@outlook.com
+	name = Griffin S.
+[commit]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+[color]
+	ui = auto
+[core]
+	editor = micro
