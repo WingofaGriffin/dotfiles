@@ -15,9 +15,7 @@ repos=(
   # other plugins
   zsh-users/zsh-completions
   agkozak/zsh-z
-  fdellwing/zsh-bat
   TwoPizza9621536/zsh-exa
-  Junker/zsh-archlinux
   # ...
 
   # plugins you want loaded last
@@ -26,16 +24,19 @@ repos=(
   zsh-users/zsh-autosuggestions
 )
 
-function plugup {
+function zplug {
   ZPLUGINDIR=${ZPLUGINDIR:-$HOME/.config/zsh/plugins}
   for d in $ZPLUGINDIR/*/.git(/); do
     echo "Updating ${d:h:t}..."
     command git -C "${d:h}" pull --ff --recurse-submodules --depth 1 --rebase --autostash
   done
 }
+alias rmorphans='sudo paru -Rs $(paru -Qtdq)'
+alias parucache='paru -Sc'
 
 # now load your plugins
 plugin-load $repos
 bindkey '\e[A' history-substring-search-up
 bindkey '\e[B' history-substring-search-down
+
 autoload -U compinit; compinit
