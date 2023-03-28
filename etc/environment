@@ -8,3 +8,5 @@ VDPAU_DRIVER=radeonsi
 MOZ_ENABLE_WAYLAND=1 thunderbird
 MOZ_ENABLE_WAYLAND=1 firefox
 SYSTEMD_TIMEDATED_NTP_SERVICES=chronyd.service:systemd-timesyncd.service
+SSH_ASKPASS='/usr/bin/ksshaskpass'
+SSH_ASKPASS_REQUIRE=prefer
