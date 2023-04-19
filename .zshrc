@@ -27,7 +27,7 @@ repos=(
 function zplug {
   ZPLUGINDIR=${ZPLUGINDIR:-$HOME/.config/zsh/plugins}
   for d in $ZPLUGINDIR/*/.git(/); do
-    echo "Updating ${d:h:t}..."
+    echo "---\nUpdating ${d:h:t}..."
     command git -C "${d:h}" pull --ff --recurse-submodules --depth 1 --rebase --autostash
   done
 }
