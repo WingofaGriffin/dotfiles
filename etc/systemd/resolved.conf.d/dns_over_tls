@@ -1,0 +1,6 @@
+[Resolve]
+DNS=9.9.9.9#dns.quad9.net
+DNSOverTLS=yes
+FallbackDNS=149.112.112.112#dns.quad9.net
+DNSSEC=allow-downgrade
+Domains=~.
