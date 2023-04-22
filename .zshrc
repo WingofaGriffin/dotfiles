@@ -23,18 +23,10 @@ repos=(
 
 plugin-load $repos
 
-# Update plugins
-function zplug {
-  ZPLUGINDIR=${ZPLUGINDIR:-$HOME/.config/zsh/plugins}
-  for d in $ZPLUGINDIR/*/.git(/); do
-    echo "---\nUpdating ${d:h:t}..."
-    command git -C "${d:h}" pull --ff --recurse-submodules --depth 1 --rebase --autostash
-  done
-}
-
 # Aliases
 alias rmorphans='sudo paru -Rs $(paru -Qtdq)'
 alias parucache='paru -Sc'
+alias zplug='plugin-update'
 
 # Substring Hotkeys
 bindkey '\e[A' history-substring-search-up
