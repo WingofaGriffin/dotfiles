@@ -1,6 +1,5 @@
 {
-    "workbench.colorTheme": "Nord",
-    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Fira Code, 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -23,5 +22,8 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "window.zoomLevel": 1
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Nord",
+    "terminal.external.linuxExec": "wezterm",
+    "editor.wordWrap": "on"
 }
