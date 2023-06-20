@@ -1,0 +1,14 @@
+
+[core]
+custom-titlebar = true
+color-theme = "Nord"
+icon-theme = "Material Icons"
+
+[ui]
+font-family = "Noto Sans"
+
+[terminal]
+font-family = "fira code"
+
+[editor]
+font-family = "Fira Code"

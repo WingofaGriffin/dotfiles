@@ -4,7 +4,7 @@ ZPLUGINDIR=~/.zsh/plugins
 if [[ ! -d $ZPLUGINDIR/zsh_unplugged ]]; then
   git clone --quiet https://github.com/mattmc3/zsh_unplugged $ZPLUGINDIR/zsh_unplugged
 fi
-source $ZPLUGINDIR/zsh_unplugged/zsh_unplugged2.zsh
+source $ZPLUGINDIR/zsh_unplugged/antidote.lite.zsh
 
 repos=(
   # plugins that you want loaded first
@@ -20,13 +20,13 @@ repos=(
   zsh-users/zsh-history-substring-search
   zsh-users/zsh-autosuggestions
 )
-
+plugin-clone $repos
 plugin-load $repos
 
 # Aliases
-alias rmorphans='sudo paru -Rs $(paru -Qtdq)'
-alias parucache='paru -Sc'
+alias rmorphans='sudo yay -Rs $(yay -Qtdq)'
 alias zplug='plugin-update'
+alias reflector='reflector --save /etc/pacman.d/mirrorlist --protocol https --sort rate --latest 200'
 
 # Substring Hotkeys
 bindkey '\e[A' history-substring-search-up

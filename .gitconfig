@@ -1,11 +1,19 @@
 [user]
-	email = griffin.z.s@outlook.com
-	name = Griffin S.
+	name = Griffin
 [commit]
 	gpgsign = true
 [push]
 	autoSetupRemote = true
 [color]
-	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
 [core]
 	editor = micro
+[protocol "file"]
+	allow = always
+[fetch]
+	prune = true
