@@ -24,7 +24,7 @@ plugin-clone $repos
 plugin-load $repos
 
 # Aliases
-alias rmorphans='sudo yay -Rs $(yay -Qtdq)'
+alias rmorphans='yay -Rs $(yay -Qtdq)'
 alias zplug='plugin-update'
 alias reflector='reflector --save /etc/pacman.d/mirrorlist --protocol https --sort rate --latest 200'
 
