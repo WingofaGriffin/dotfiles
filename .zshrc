@@ -13,7 +13,7 @@ repos=(
   # other plugins
   zsh-users/zsh-completions
   agkozak/zsh-z
-  TwoPizza9621536/zsh-exa
+  TwoPizza9621536/zsh-eza
 
   # plugins you want loaded last
   zsh-users/zsh-syntax-highlighting
